@@ -1,0 +1,32 @@
+@media (max-width: 991px) {
+    .promo {
+        height: 450px;
+        padding: 25px;
+    }
+    .advantages {
+        height: 400px;
+        padding: 40px 25px 30px;
+        &__icon {
+            text-align: center;
+            width: 220px;
+        }
+    }
+    .title {
+        &_left {
+            font-size: 26px;
+            line-height: 36px;
+        }
+    }
+    .consultation {
+        min-height: 400px;
+        padding: 40px 25px 30px;
+    }
+};
+
+// @media (max-width: 767px) {
+
+// };
+
+// @media (max-width: 575px) {
+
+// };

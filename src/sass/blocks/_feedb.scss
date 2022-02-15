@@ -1,0 +1,35 @@
+.feedb {
+    min-height: 920px;
+    padding-bottom: 50px;
+    &__customer {
+        margin-top: 60px;
+        display: flex;
+    }
+    &__photo {
+        width: 169px;
+        height: 169px;
+    }
+    &__descr {
+        margin-left: 60px;
+        width: 680px;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        color: #0D0D0D;
+    }
+    &__subtitle {
+        margin: 0;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        &-marathons {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+            color: #646464;
+        }
+    }
+    &__text {
+        margin-top: 10px;
+    }
+}
