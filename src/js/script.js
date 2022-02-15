@@ -32,5 +32,24 @@ $(document).ready(function(){
     
     toggleSlide('.catalog-item__detail');
     toggleSlide('.catalog-item__back');
+
+    //MODAL
+
+    $('[data-modal=consultation]').on('click', function() {
+        $('.overlay, #consultation').fadeIn('slow');
+    });
+    $('.modal__close').on('click', function() {
+        $('.overlay, #consultation, #order, #thanks').fadeOut('slow');
+    });
+    // $('.button_catalog-item').on('click', function() {
+    //     $('.overlay, #order').fadeIn('slow');
+    // }); просто открываем статичное модальное окно
+
+    $('.button_catalog-item').each(function(i) { 
+        $(this).on('click', function() {
+            $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
+            $('.overlay, #order').fadeIn('slow');
+        });
+    });
 });
 
