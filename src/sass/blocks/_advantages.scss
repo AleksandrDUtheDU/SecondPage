@@ -23,6 +23,17 @@
         a {
             color: #FF0000;
         }
-
+        &_animation {
+            img{
+                // animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-direction;
+                animation-name: heartbeat;
+                animation-duration: 2s;
+                animation-timing-function: ease;
+                animation-iteration-count: infinite; //бесконечно
+                &:hover {
+                    animation-play-state: paused;
+                }
+            }
+        }
     }
 }

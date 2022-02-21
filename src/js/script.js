@@ -25,7 +25,7 @@ $(document).ready(function(){    //силк слайдер
             $(this).on('click', function(e) {
                 e.preventDefault();
                 $('.catalog-item__content').eq(i).toggleClass('catalog-item__content_active'); //создаем фукцию которая принимает и перключаем карточку товара так же классами активности
-                $('.catalog-item__list').eq(i).toggleClass('catalog-item__list_active');
+                $('.catalog-item__content_descr').eq(i).toggleClass('catalog-item__content_descr_active');
             });
         });
     };
@@ -118,5 +118,17 @@ $(document).ready(function(){    //силк слайдер
         });
         return false;
     });
+    // pageup
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 1600) {
+            $('.pageup').fadeIn();
+        } else {
+            $('.pageup').fadeOut();
+        }
+    });
+    
+    new WOW().init();
+
 });
 

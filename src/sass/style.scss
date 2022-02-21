@@ -1,7 +1,9 @@
 @import 'base/variables';
+@import 'base/animation';
 * {
     font-family: 'Museo', sans-serif;
-    box-sizing: border-box;
+    box-sizing: border-box; //паддинги включают размер
+    scroll-behavior: smooth; //плавный скролл
 }
 .container {
     max-width: 950px;
@@ -20,6 +22,7 @@
 @import 'blocks/feedb';
 @import 'blocks/footer';
 @import 'blocks/modal';
+@import 'blocks/pageup';
 
 
 
